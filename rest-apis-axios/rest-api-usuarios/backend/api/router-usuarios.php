@@ -1,5 +1,6 @@
 <?php   
     header("Content-Type: aplication/json");
+    include("../controllers/usuarios-controller.php");
     
     // Que servicios web necesito
     /* 
@@ -19,45 +20,23 @@
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'POST':
             $_POST = json_decode(file_get_contents('php://input') , true);
-            $res = array();
-            $res = array(
-                'exito' => "Usuario Guardado con exito" ,
-                'nombreUsuario' => $_POST['nombreUsuario']
-            );
-            echo json_encode($res);
+            guardarUsuario ($_POST["cargo"] , $_POST["nombreUsuario"] , $_POST["apellidoUsuario"] , $_POST["fechaNacimiento"] , $_POST["email"] , $_POST["password"]);
         break;
-        case "GET":
+        case 'GET':
             if (isset($_GET['id'])) {
-                $res = array();
-                $res = array(
-                    'identificador' => $_GET['id'] , 
-                    'usuario'=> 'Nombre Usuario'
-                );
-                echo json_encode($res);
+                verUsuario ($_GET['id']);
             } else {
-                $res = array();
-                $res = array(
-                    'usuarios' => 'Obteniendo Usuarios'
-                );
-                echo json_encode($res);
+                verUsuarios ();
             }
+            
             
         break;
         case "PUT":
             $_PUT = json_decode(file_get_contents('php://input') , true);
-            $res = array();
-            $res = array(
-                'identificador Usuario' => $_GET['id'] ,
-                'informacion usuario' => $_PUT
-            );
-            echo json_encode($res);
+            actualizarUsuario ($_PUT["cargo"] , $_PUT["nombreUsuario"] , $_PUT["apellidoUsuario"] , $_PUT["fechaNacimiento"] , $_PUT["email"] , $_GET['id']);
         break;
         case "DELETE":
-            $res = array();
-            $res = array(
-                'Eliminado' => $_GET['id']
-            );
-            echo json_encode($res);
+            eliminarUsuario ($_GET['id']);
         break;
         default: 
             echo "Opcion de peticion no valida de momento";
