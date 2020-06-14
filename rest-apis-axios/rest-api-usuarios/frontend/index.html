@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Api</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-center text-white">
+                        <h3>Formulario de llenado de tabla</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="nombreUsuario" placeholder="Nombre Usuario" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="apellidoUsuario" placeholder="Apellido Usuario">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" name="" id="fechaNacimiento">
+                            </div>
+                            <div class="form-group">
+                                <select name="" id="llenaTabla" class="form-control">
+                                    <option value="">Seleccione Cargo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="" id="email" placeholder="Digite Correo">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="" id="password" placeholder="Digite Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="button" onclick = "guardarUsuario ()" id="btnGuardar" class="btn btn-success" value="Guardar Usuario">
+                                <input type="button" onclick = "actualizarUsuario ()" id="btnActualizar" class="btn btn-primary" value="Actualizar Usuario" style="display: none;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <table class="table table-bordered table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre Usuario</th>
+                            <th>Apellido Usuario</th>
+                            <th>Correo </th>
+                            <th>Cargo</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pintar-datos">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="tost" aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;" role="alert" data-delay="6000">
+        <div class="toast" style="position: absolute; top: 0; right: 0;" role="alert" data-delay="6000">
+        <div class="toast-header bg-primary text-white">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto text-white">Notificacion</strong>
+            <small class="text-white">Ahora</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body text-center" id="response">
+            
+        </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/usuarios.controller.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

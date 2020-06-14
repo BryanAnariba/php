@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login o Registro</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-sm-12 mx-auto">
+                <div class="card">
+                    <div class="card-header text-center text-white bg-success">
+                        <h3>Login form</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" name="" id="emailUsuario" class="form-control" placeholder="Digite email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="" id="passwordUsuario" class="form-control" placeholder="Digite clave">
+                            </div>
+                            <div class="row">
+                                <div class="col mx-auto text-center">
+                                    <input type="button" value="Iniciar Sesion" class="btn btn-outline-success" onclick="iniciarSesion ()">
+                                </div>
+                                <div class="col mx-auto text-center">
+                                    <input type="button" value="Ir a Registrarse" class="btn btn-outline-primary" onclick="muestraSignUp ()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center text-white bg-dark">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="signup-container" style="display: none;">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-sm-12 mx-auto">
+                <div class="card">
+                    <div class="card-header text-center text-white bg-success">
+                        <h3>SignUp form</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="nombreUsuario" placeholder="Nombre Usuario" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" id="apellidoUsuario" placeholder="Apellido Usuario">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" name="" id="fechaNacimiento">
+                            </div>
+                            <div class="form-group">
+                                <select name="" id="llenaTabla" class="form-control">
+                                    <option value="">Seleccione Cargo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="" id="email" placeholder="Digite Correo">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="" id="password" placeholder="Digite Password">
+                            </div>
+                            <div class="row">
+                                <div class="col mx-auto text-center">
+                                    <input type="button" value="Volver Iniciar Sesion" class="btn btn-outline-primary" onclick="muestraLoginUser ()">
+                                </div>
+                                <div class="col mx-auto text-center">
+                                    <input type="button" value="Registrarse" class="btn btn-outline-success" onclick="registrarUsuario ()">
+                                </div>
+                            </div>
+                        </form>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center text-white bg-dark">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="./js/axios.min.js" type="text/javascript"></script>
+    <script src="./js/login.controller.js" type="text/javascript"></script>
+</body>
+</html>

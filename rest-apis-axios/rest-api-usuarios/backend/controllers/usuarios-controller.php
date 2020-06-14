@@ -23,8 +23,7 @@
         // Si tuvo exito que perare el json con mensaje de exito
         if ($exito) {
             $toJson = array(
-                "mensaje" => "Usuario Insertado con exito" ,
-                "Usuario" => $_POST["email"]
+                "mensaje" => "Usuario Insertado con exito" . $_POST["email"]
             ); 
 
             $jsonToString = json_encode($toJson);

@@ -28,8 +28,6 @@
             } else {
                 verUsuarios ();
             }
-            
-            
         break;
         case "PUT":
             $_PUT = json_decode(file_get_contents('php://input') , true);
