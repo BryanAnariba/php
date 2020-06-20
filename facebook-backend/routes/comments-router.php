@@ -1,4 +1,5 @@
 <?php
+    include("cors.php");
     header("Content-Type: application/json");
     require_once("../controllers/comments-controller.php");
     require_once("./cors.php");

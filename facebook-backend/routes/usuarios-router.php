@@ -1,7 +1,8 @@
 <?php
+    include("cors.php");
     header("Content-Type: application/json");
     require_once("../controllers/controlador-usuarios.php");
-    require_once("./cors.php");
+    
     // Que servicios web necesito de usuarios
     /*
         1 - Insertar un nuevo usuario
