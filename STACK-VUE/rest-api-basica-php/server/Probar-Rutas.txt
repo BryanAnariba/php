@@ -1,0 +1,41 @@
+Se pueden probar en distintos clientes como:
+    PostMan
+    PostWoman
+    Insomnia
+    "En el navegador google se puede pero solo peticiones tipo GET"
+    etc
+
+Rutas
+1 - Obtener todos los articulos
+    -> http://localhost/php/STACK-VUE/rest-api-basica-php/server/routes/articles-routes.php
+
+2 - Obtener un solo articulo: ojo aqui debe colocar el id al final ?idArticle=aqui va el id
+    -> http://localhost/php/STACK-VUE/rest-api-basica-php/server/routes/articles-routes.php?idArticle=1
+
+3 - Insertar un nuevo articulo
+    -> http://localhost/php/STACK-VUE/rest-api-basica-php/server/routes/articles-routes.php
+
+    Data a insertar en formato json, debe mandar esto en el body o cuerpo de la peticion o request
+    {
+        "marca":"Huawei",
+        "modelo":"Y7 2019",
+        "stock": 8
+    }
+
+
+4 - Editar un nuevo articulo
+    -> http://localhost/php/STACK-VUE/rest-api-basica-php/server/routes/articles-routes.php?idArticle=1
+    Data a editar en formato json, debe mandar esto en el body o cuerpo de la peticion o request
+    {
+        "marca":"Huawei",
+        "modelo":"Y9 2019",
+        "stock": 100
+    }
+
+5 - Eliminar un nuevo articulo
+    -> http://localhost/php/STACK-VUE/rest-api-basica-php/server/routes/articles-routes.php?idArticle=1
+
+OJO la ruta
+    http://localhost/php/STACK-VUE/
+    HACE REFERENCIA A MI REPOSITORIO EN CASO DE NO PONER EXACTAMENTE EL TIPO DE CARPETAS QUE SE OSBERVAN, DEBE MODIFICAR LA URL 
+    O SUBIR LOS ARCHIVOS UN SAAS O ALGO POR EL ESTILO
