@@ -1,5 +1,5 @@
 <?php
-
+    include('./cors.php');
     // Para permitir la entrada de datos en formato json
     header("Content-Type: application/json");
 
