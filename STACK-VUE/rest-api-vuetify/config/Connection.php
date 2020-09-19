@@ -1,6 +1,4 @@
 <?php
-    include('./ConnectionData.php');
-
     function connectMe () {
         define('server','localhost');
         define('db_name', 'api-db');
