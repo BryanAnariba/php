@@ -1,0 +1,9 @@
+En libs estan las clases basicas de 
+    Model
+    Controller
+    View
+los cuales se utilizaran como herencia en los demas controladores que cremos en la carpeta controllers
+
+En routes hace referencia o es lo homologo a nodejs para almacenar las rutas (VER ESTE ARCHIVO DE NUEVO YA QUE ES MUY CONFUSO)
+
+En config van definidas las constantes a utilizar como variables de entorno

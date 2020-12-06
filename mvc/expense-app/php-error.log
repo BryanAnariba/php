@@ -1,0 +1,15 @@
+[23-Nov-2020 01:19:44 Europe/Berlin] INICIO DE APLICACION WEB
+[23-Nov-2020 01:19:44 Europe/Berlin] APP::construct-> no se ha especificado el controlador user
+[23-Nov-2020 01:19:44 Europe/Berlin] PHP Warning:  require_once(controllers/LoginController.php): failed to open stream: No such file or directory in C:\xampp\htdocs\php\PHP-MVC\expense-app\libs\app.php on line 15
+[23-Nov-2020 01:19:44 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'controllers/LoginController.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\php\PHP-MVC\expense-app\libs\app.php on line 15
+[23-Nov-2020 01:21:39 Europe/Berlin] INICIO DE APLICACION WEB
+[23-Nov-2020 01:21:39 Europe/Berlin] APP::construct-> no se ha especificado el controlador user
+[23-Nov-2020 01:21:39 Europe/Berlin] Inicio de login
+[23-Nov-2020 09:03:41 Europe/Berlin] PHP Warning:  require_once(../database/database.php): failed to open stream: No such file or directory in C:\xampp\htdocs\php\PHP-MVC\expense-app\libs\Model.php on line 2
+[23-Nov-2020 09:03:41 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required '../database/database.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\php\PHP-MVC\expense-app\libs\Model.php on line 2
+[23-Nov-2020 09:04:27 Europe/Berlin] APP::construct-> El controlador no ha sido especificado
+[23-Nov-2020 09:04:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Login::loadModel() in C:\xampp\htdocs\php\PHP-MVC\expense-app\routes\app.php:18
+Stack trace:
+#0 C:\xampp\htdocs\php\PHP-MVC\expense-app\index.php(20): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\php\PHP-MVC\expense-app\routes\app.php on line 18

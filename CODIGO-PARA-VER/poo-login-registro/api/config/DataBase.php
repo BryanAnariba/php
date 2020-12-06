@@ -14,6 +14,7 @@
             try {
                 $this->opcionesConexion = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
                 $this->conexion = new PDO('mysql:host=' . server . "; dbname= " . db_name, user, password, $this->opcionesConexion);
+                $this->conexion->query("SET NAMES 'utf8'");
                 return $this->conexion;
             } catch (Exception $ex) {
                 die('Error en la conexion: ' . $ex->getMessage());

@@ -17,8 +17,8 @@
             return $this->connect;
         }
 
-        public function closeConnection ($connection) {
-            $this->connect = mysqli_close($connection);
+        public function closeConnection () {
+            mysqli_close($this->connect);
         }
     }
 
