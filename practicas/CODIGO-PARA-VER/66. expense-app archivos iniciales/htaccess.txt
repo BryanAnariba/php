@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+
+https://colorlib.com/wp/free-bootstrap-wizards/?__cf_chl_captcha_tk__=a631d37002585ff2d31f5016b9d56e61748c1ed6-1606162463-0-AY15IgIBQtNzLSDjPrrRFr09l1BYrw8hdGtgNuWG5Jwk-Z4kJ-n5mbrqKgtwahM_Jd780Zj4RQigGCpYImhl7DC_BYcr3qfSEguWqQKpptDgg7oVZNN8rc_D7m8ZaACKZWNNe1NTWZM9WgERgmNRt6OK5Od8zNkwGzwVl1ZLDQyy-OabCff222iKKc8CXnNCyrDBZw452BIfOPwTQI73YL95KmeKYdRrhA8QvORrrGg7VJQmP-YrE2zLbcAjGxLDkcjWXUa3R4W84LFecoYrWxQ0c5HJrlFKu3Jshqz_4UWkjBYqTZqUSwh1E9vXnFq9FPWc0L-1RNpvmiXyl2pf4HDp7Irvapt8CG-er88IkDHnVNWsITJhubxoNRMf4aRvz_xHSwRUDLSsZvSfxyXedA-tqScLa7AQ0HtXUtKBgB8iJ16eWuJE4zkQa77_bitKIRBu6tTUyzTYRg_iscb-E4NFq7n45fmhMpcKOJmw1rY2E0PzkZ9SawLar0Bam9-OvwfPSyfJ4sXSWj-SMrEH63mDps4Tzo9fW61KFn9r0r747xZtb37upTxjQD5i8VDfBQ
